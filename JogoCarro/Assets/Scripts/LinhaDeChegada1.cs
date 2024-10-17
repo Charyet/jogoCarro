@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LinhaDeChegada : MonoBehaviour
+public class LinhaDeChegada1 : MonoBehaviour
 {
      public GameObject linhaDeChegada;
 

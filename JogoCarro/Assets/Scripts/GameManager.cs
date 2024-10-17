@@ -42,8 +42,8 @@ public class GameManager : MonoBehaviourPunCallbacks
     const string playerPrefabPath = "Prefabs/Carro";
 
     int playersInGame;
-    List<Correndo> playerList = new List<Correndo>();
-    Correndo playerLocal;
+    List<Correndo1> playerList = new List<Correndo1>();
+    Correndo1 playerLocal;
 
     private void Start()
     {
@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviourPunCallbacks
     }
     private void CreatePlayer()
     {
-        Correndo player = NetworkManager.instance.Instantiate(playerPrefabPath, new Vector3(-7, 0, 0), Quaternion.identity).GetComponent<Correndo>();
+        Correndo1 player = NetworkManager.instance.Instantiate(playerPrefabPath, new Vector3(-7, 0, 0), Quaternion.identity).GetComponent<Correndo1>();
         player.photonView.RPC("Initialize", RpcTarget.All);
     }
 

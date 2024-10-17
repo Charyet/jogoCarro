@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveBG : MonoBehaviour
+public class MoveBG1 : MonoBehaviour
 {
     [SerializeField] private float speed = 1f;
     [SerializeField] private float width = 6f;
